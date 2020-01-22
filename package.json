@@ -3,8 +3,19 @@
   "version": "1.0.0",
   "description": "The best tic tac toe game ever",
   "main": "app.js",
+  "scripts": {
+    "build:ts": "tsc",
+    "build:scss": "sass src/web/scss/:build/web/css/",
+    "build": "yarn build:ts && yarn build:scss",
+    "watch:ts": "tsc --watch",
+    "watch:scss": "sass src/web/scss/:build/web/css/ --watch"
+  },
   "repository": "https://github.com/cefadrom/tic-tac-toe",
   "author": "cefadrom <cefadrom1@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {}
 }
