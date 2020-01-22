@@ -3,6 +3,7 @@
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$/src/server" libraries="{tic-tac-toe/node_modules}" />
     <file url="file://$PROJECT_DIR$/src/web/ts/script.ts" libraries="{jquery-3.4.1.slim}" />
+    <file url="PROJECT" libraries="{jquery-3.4.1.slim}" />
     <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>

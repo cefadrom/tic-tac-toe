@@ -1,0 +1,46 @@
+body {
+  font-family: "Roboto Light", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#game {
+  display: none;
+  background: #EEE;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  $game-size: 100;
+
+  &.x-screen {
+    height: $game-size + vh;
+    width: $game-size + vh;
+  }
+
+  &.y-screen {
+    height: $game-size + vw;
+    width: $game-size + vw;
+  }
+
+  &.visible {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .case {
+    flex: 1;
+    min-width: 30%;
+    border: 3px solid #DDD;
+
+    &.available {
+      cursor: pointer;
+    }
+    &.unavailable {
+      cursor: not-allowed;
+    }
+  }
+}
