@@ -1,0 +1,10 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "The best tic tac toe game ever",
+  "main": "app.js",
+  "repository": "https://github.com/cefadrom/tic-tac-toe",
+  "author": "cefadrom <cefadrom1@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
