@@ -15,7 +15,11 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/socket.io": "^2.1.4"
+  }
 }
