@@ -42,5 +42,15 @@ body {
     &.unavailable {
       cursor: not-allowed;
     }
+
+    &.icon-round {
+      background: transparent url("../icons/round.svg") no-repeat;
+      background-size: cover;
+    }
+
+    &.icon-cross {
+      background: transparent url("../icons/cross.svg") no-repeat;
+      background-size: cover;
+    }
   }
 }

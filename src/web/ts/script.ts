@@ -25,15 +25,15 @@ $(function () {
     // Game grid
     const _gameGrid = $('#game');
     generateGrid([
-        {occuped: true, icon: null},
+        {occuped: true, icon: 'cross'},
         {occuped: false, icon: null},
-        {occuped: true, icon: null},
+        {occuped: true, icon: 'round'},
         {occuped: false, icon: null},
-        {occuped: true, icon: null},
+        {occuped: true, icon: 'round'},
         {occuped: false, icon: null},
         {occuped: false, icon: null},
         {occuped: false, icon: null},
-        {occuped: true, icon: null},
+        {occuped: true, icon: 'cross'},
     ]);
 
     function gameGridResize() {
@@ -47,8 +47,8 @@ $(function () {
     function generateGrid(grid: $gameGrid[]) {
         for (let i = 0; i < grid.length; i++) {
             const caseData = grid[i];
-            const caseOccuped = caseData.occuped ? 'unavailable' : 'available';
-            _gameGrid.append(`<div class="case ${caseOccuped}" data-case-id="${i}"></div>`);
+            const caseClasses = caseData.occuped ? `unavailable icon-${caseData.icon}` : 'available';
+            _gameGrid.append(`<div class="case ${caseClasses}" data-case-id="${i}"></div>`);
         }
     }
 

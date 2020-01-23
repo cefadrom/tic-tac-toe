@@ -10,5 +10,6 @@ app.get('/', (req, res) => {
 
 app.use('/ts', express.static(path.join(__dirname, '../web/ts/')));
 app.use('/css', express.static(path.join(__dirname, '../web/css/')));
+app.use('/icons', express.static(path.join(__dirname, '../web/icons/')));
 
 app.listen(80);

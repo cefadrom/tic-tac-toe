@@ -8,7 +8,8 @@
     "build:scss": "sass src/web/scss/:build/web/css/",
     "build": "yarn build:ts && yarn build:scss",
     "watch:ts": "tsc --watch",
-    "watch:scss": "sass src/web/scss/:build/web/css/ --watch"
+    "watch:scss": "sass src/web/scss/:build/web/css/ --watch",
+    "watch:server": "nodemon build/server/server.js"
   },
   "repository": "https://github.com/cefadrom/tic-tac-toe",
   "author": "cefadrom <cefadrom1@gmail.com>",
